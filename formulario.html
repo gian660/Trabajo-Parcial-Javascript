@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Registro</title>
+  <!--Cargar CSS Bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- Cargar JQUERY -->
+  <script src="jquery-3.7.0.min.js"></script>
+</head>
+
+<body>  
+  <div class="container">
+    <!--Titulo del Registro-->
+    <h1 class="mt-5 mb-3">Formulario de Registro</h1>
+
+    <!--Formulario del registro-->
+    <form id="datosIngresados" action="datosIngresados.html" method="get">
+
+      <!--Input Nombre-->
+      <div class="mb-3">
+        <label for="name" class="form-label">Nombres:</label>
+        <input type="text" id="name" name="name" class="form-control" >
+      </div>
+      
+      <!--Input Apellido Paterno-->
+      <div class="mb-3">
+        <label for="lastname" class="form-label">Apellido Paterno:</label>
+        <input type="text" id="lastname" name="lastname" class="form-control" >
+      </div>
+
+      <!--Input Apellido Materno-->
+      <div class="mb-3">
+        <label for="lastname2" class="form-label">Apellido Materno:</label>
+        <input type="text" id="lastname2" name="lastname2" class="form-control" >
+      </div>
+
+      <!--Input Correo-->
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo:</label>
+        <input type="email" id="email" name="email" class="form-control" >
+      </div>
+
+      <!--Input Género-->
+      <div class="mb-3">
+        <label for="genero" class="form-label">Género:</label>
+        <select id="genero" name="genero" class="form-select" >
+          <option value="">Seleccione</option>
+          <option value="male">Masculino</option>
+          <option value="female">Femenino</option>
+          <option value="otros">Otros</option>
+        </select>
+      </div>
+
+      <!--Input Fecha de Nacimiento-->
+      <div class="mb-3">
+        <label for="fecNacimiento" class="form-label">Fecha de Nacimiento:</label>
+        <input type="date" id="fecNacimiento" name="fecNacimiento" class="form-control" >
+      </div>
+
+      <!--Boton Submit-->
+      <button type="submit" class="btn btn-primary">Registrarse</button>
+    </form>
+  </div>
+  <!--Cargar javascript-->
+  <script src="custom.js"></script>
+</body>
+
+</html>
